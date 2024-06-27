@@ -155,7 +155,6 @@ const Login = () => {
 
     return (
         <div className="mainCont">
-            <img src='' alt='Brand Logo' className="logo" />
             <div className="rowCont">
                 <button className="state-btn" onClick={() => setCurrentState('SignIn')}>
                     <span className="states" style={{ color: currentState === 'SignIn' ? 'blue' : 'grey', textDecoration: 'none' }}>
