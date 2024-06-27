@@ -1,0 +1,347 @@
+/* .mainCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.form-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 25%;
+}
+
+@media  screen and (max-width:600px) {
+    .form-cont{
+        width: 100%;
+    }
+}
+
+.input-cont{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+}
+
+.form-label{
+    color: rgb(87, 81, 81);
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.form-input{
+    background-color: transparent;
+    border: solid 1px rgb(147, 147, 154);
+    padding: 5px;
+    border-radius: 5px;
+    width: 75%;
+    outline: none;
+    height: 20px;
+}
+
+.forget-pass-btn{
+    color: rgb(66, 130, 180);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    align-self: flex-end;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.submit-btn{
+    background-color: darkblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 40%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    align-self: flex-end;
+    border-radius: 10px;
+    height: 35px;
+    margin: 10px;
+}
+
+@media  screen and (max-width:600px) {
+    .submit-btn{
+        font-size: 10px;
+    }
+}
+
+
+.rowCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+    width: 25%;
+}
+
+.states{
+    color:grey;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.state-btn{
+    background-color: transparent;
+    border: solid 1px grey;
+    outline: none;
+    cursor: pointer;
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.logo{
+    width: 5%;
+}
+
+@media screen and  (max-width :1200px) {
+    .submit-btn{
+        width:60%
+    }
+    .logo{
+        width: 6%;
+    }
+
+}
+
+@media screen and  (max-width :800px) {
+    .logo{
+        width: 8%;
+    }
+
+}
+
+@media screen and  (max-width :576px) {
+    .states{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and  (max-width :430px) {
+    .states{
+        font-size: 8px;
+        font-weight: bold;
+    }
+    .state-btn{
+        border: none;
+        background-color: rgb(246, 243, 243);
+        border-radius: 5px;
+    }
+
+}
+
+@media screen and  (max-width :526px) {
+    .arrow-mark{
+        display: none;
+    }
+    .form-input{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:920px) {
+    .state-btn{
+        width: 80%;
+        margin: 10px;
+    }
+    .rowCont{
+        width: 40%;
+    }
+    .form-cont{
+        width: 40%;
+    }
+} */
+
+
+.mainCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.rowCont {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.state-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.states {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.arrow-mark {
+    margin-left: 5px;
+}
+
+.form-cont {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.input-cont {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.form-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    font-size: 14px;
+    /* padding-right: 10px; */
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.forget-pass-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+    padding: 0;
+}
+
+
+
+.chat-cont {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .chat-user-name {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .chat-body {
+    height: 300px; /* Adjust height as needed */
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .msg-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .user-side {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-end;
+  }
+  
+  .msg-content {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .user-content {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .chat-footer {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .chat-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .chat-send-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .chat-send-btn:hover {
+    background-color: #0056b3;
+  }
