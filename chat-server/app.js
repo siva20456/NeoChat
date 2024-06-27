@@ -39,7 +39,7 @@ app.use(express.json());
 const server = http.createServer(app)
 
 app.use(function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "http://localhost:3004");
+    res.header("Access-Control-Allow-Origin", "https://neo-chat-96mp.vercel.app");
     res.header('Access-Control-Allow-Methods', 'GET, POST, UPDATE, DELETE, OPTIONS');
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept , Authorization");
     next()
