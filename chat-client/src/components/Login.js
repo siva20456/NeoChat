@@ -53,7 +53,7 @@ const Login = () => {
                     "Content-type": "application/json; charset=UTF-8"
                 }
             };
-            const res = await fetch(`http://localhost:${PORT}/login`, options);
+            const res = await fetch(`https://neochat-69jw.onrender.com/login`, options);
             if (res.status === 200) {
                 const data = await res.json();
                 Cookies.set('jwt_token', data.jwt, { expires: 30 });
@@ -85,7 +85,7 @@ const Login = () => {
                     "Content-type": "application/json; charset=UTF-8"
                 }
             };
-            const res = await fetch(`http://localhost:${PORT}/register`, options);
+            const res = await fetch(`https://neochat-69jw.onrender.com/register`, options);
             if (res.status === 201) {
                 const data = await res.json();
                 Cookies.set('jwt_token', data.jwt_token, { expires: 30 });

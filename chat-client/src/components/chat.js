@@ -7,7 +7,7 @@ import Cookies from 'js-cookie'
 
 
 // const PORT = 3005
-const socket = io.connect('http://localhost:3005')
+const socket = io.connect('https://neochat-69jw.onrender.com')
 
 const Chat = () => {
 
@@ -24,7 +24,7 @@ const Chat = () => {
     },[])
 
     const getChatData = async() => {
-        const res = await fetch(`http://localhost:3005/getChats`)
+        const res = await fetch(`https://neochat-69jw.onrender.com/getChats`)
         const data = await res.json()
         console.log(data,'DataGiven')
         setMsgList(data.data)
