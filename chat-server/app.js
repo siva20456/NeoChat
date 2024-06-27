@@ -114,7 +114,7 @@ app.get('/getChats', async (req, res) => {
 
 const io = new Server(server, {
     cors: {
-        origin: 'https://neo-chat-96mp.vercel.app/',
+        origin: 'https://neo-chat-96mp.vercel.app',
         methods: ['GET', 'POST'],
     },
 })
