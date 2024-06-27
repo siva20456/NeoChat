@@ -1,6 +1,6 @@
 
 
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
 import { AiOutlineArrowRight } from 'react-icons/ai';
@@ -19,6 +19,13 @@ const Login = () => {
         email: '',
         password: ''
     });
+
+    useEffect(() => {
+        const jwt = Cookies.get('jwt_token')
+        if(jwt !== undefined){
+            navigate('/')
+        }
+    },[])
 
     const handleUsernameChange = (e) => {
         setUsername(e.target.value);
@@ -143,6 +150,8 @@ const Login = () => {
                 return null;
         }
     };
+
+
 
     return (
         <div className="mainCont">

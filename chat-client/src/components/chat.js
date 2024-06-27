@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import io from 'socket.io-client'
 import {RiSendPlane2Fill} from 'react-icons/ri'
+import { useNavigate } from 'react-router-dom';
 import '../OverAll.css'
 import Cookies from 'js-cookie'
 // const envVar = require('dotenv').config()
@@ -11,9 +12,12 @@ const socket = io.connect('https://neochat-69jw.onrender.com')
 
 const Chat = () => {
 
+    const nav = useNavigate()
+
     // const {room,user} = props
     // console.log(room,user)
     const thisSideUser = Cookies.get('user')
+    const jwt = Cookies.get('jwt_token')
 
     const [currentMsg,setMsg] = useState('')
     const [messagesList,setMsgList] = useState([])
@@ -24,6 +28,9 @@ const Chat = () => {
     },[])
 
     const getChatData = async() => {
+        if(jwt === undefined){
+            nav('/login')
+        }
         const res = await fetch(`https://neochat-69jw.onrender.com/getChats`)
         const data = await res.json()
         console.log(data,'DataGiven')
@@ -60,7 +67,6 @@ const Chat = () => {
         })
         getChatData()
     },[socket])
-
 
     return(
         <div className='chat-cont'>
